@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Flashcard App</h1>
+  <form (ngSubmit)="addFlashcard()" #f="ngForm" class="add-form">
+    <input
+      [(ngModel)]="question"
+      name="question"
+      placeholder="Question"
+      required
+    />
+    <input
+      [(ngModel)]="answer"
+      name="answer"
+      placeholder="Answer"
+      required
+    />
+    <button type="submit">Add Flashcard</button>
+  </form>
+
+  <div class="flashcard-list">
+    <app-flashcard
+      *ngFor="let card of flashcards"
+      [card]="card"
+    ></app-flashcard>
+  </div>
+</div>

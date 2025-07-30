@@ -1,0 +1,33 @@
+.flashcard {
+  width: 180px;
+  height: 120px;
+  background: #f0f6ff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #0001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  margin: 0.5rem;
+  position: relative;
+  font-size: 1.1rem;
+  transition: box-shadow 0.1s;
+}
+.flashcard:focus {
+  outline: 2px solid #3b82f6;
+}
+.front, .back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  position: absolute;
+  backface-visibility: hidden;
+  padding: 1rem;
+}
+.back {
+  background: #dbeafe;
+}

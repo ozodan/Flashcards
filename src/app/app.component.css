@@ -1,0 +1,36 @@
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0002;
+  padding: 2rem;
+}
+h1 {
+  text-align: center;
+}
+.add-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.add-form input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.add-form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.flashcard-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
